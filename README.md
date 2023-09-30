@@ -7,6 +7,17 @@
 - Lesson number 8, MongoDB origins and benefits
 - Lesson number 9, the differences of MongoDB and SQL databases
 
+### MongoDB terminologies
+- It's like JSON structure
+<details close>
+<summary>click to see JSON</summary>
+<img src="img/JsonSample.png" alt="Json sample">
+</details>
+<details close>
+<summary>click to see MongoDB</summary>
+<img src="img/MongoDBSample.png" alt="MongoDB sample">
+</details>
+
 ### MongoDB benefits
  <details close>
    <summary>click to see</summary>
