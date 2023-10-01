@@ -1,0 +1,6 @@
+db.customer.insertOne({
+"name": "Juan Bruce",
+"age": "44",
+"city": "Las vegas, United States",
+"location": [48.8584, 2.2945],
+"hobbies": ["Swimming", "Reading"]})

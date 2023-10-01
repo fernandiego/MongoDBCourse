@@ -3,9 +3,13 @@
 
 ## ROADMAP so far:
 - Installing mongoDB using docker image [Tutorial how to](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-community-with-docker/#std-label-docker-mongodb-community-install)
+- To start the mongosh using this docker image, use this command docker exec -it nomeDoContainer mongosh
 - local database created, with no auth, some issues here
-- Lesson number 8, MongoDB origins and benefits
-- Lesson number 9, the differences of MongoDB and SQL databases
+- Class number 8, MongoDB origins and benefits
+- Class number 9, the differences of MongoDB and SQL databases
+- Class number 12, how mongoDB works
+
+[//]: # (<details close><summary>Annotations</summary></details>)
 
 ### MongoDB terminologies
 - It's like JSON structure
@@ -16,6 +20,51 @@
 <details close>
 <summary>click to see MongoDB</summary>
 <img src="img/MongoDBSample.png" alt="MongoDB sample">
+</details>
+<details close><summary>List of terminologies</summary>
+Here is a list of MongoDB terminologies commonly used in MongoDB:
+
+1. **Document**: A basic unit of data in MongoDB, equivalent to a row in a relational database. Documents are BSON (Binary JSON) objects that can contain fields and values.
+
+2. **Collection**: A group of MongoDB documents, similar to a table in a relational database. Collections do not enforce a schema, so documents within a collection can have different structures.
+
+3. **Database**: A logical container for collections and documents in MongoDB. A server can host multiple databases, each with its collections and documents.
+
+4. **Field**: A key-value pair within a MongoDB document. Fields represent the individual pieces of data stored in documents.
+
+5. **BSON**: Binary JSON, the binary serialization format used by MongoDB to store and exchange data. BSON extends JSON to include additional data types and binary support.
+
+6. **Query**: A request for data retrieval from a MongoDB database. Queries are constructed using the MongoDB Query Language (MQL) and can filter, sort, and limit the results.
+
+7. **Cursor**: A pointer to the result set of a query. Cursors allow clients to retrieve documents from a query result in a paginated manner.
+
+8. **Index**: A data structure that improves the speed of data retrieval operations on a MongoDB collection. Indexes are created on specific fields and allow for efficient querying.
+
+9. **Primary Key**: A unique identifier for each document within a collection. In MongoDB, the `_id` field serves as the primary key by default.
+
+10. **Replica Set**: A group of MongoDB servers that maintain the same data set for redundancy and high availability. One server is the primary, while the others are secondary nodes.
+
+11. **Sharding**: A database architecture strategy in MongoDB for distributing data across multiple servers or clusters to improve scalability and performance.
+
+12. **Aggregation**: The process of transforming data in MongoDB using operations like `$match`, `$group`, `$project`, and more. Aggregation is used to perform complex data analysis and calculations.
+
+13. **Atlas**: MongoDB Atlas is the cloud-based database service provided by MongoDB, Inc. It offers managed MongoDB instances in various cloud environments.
+
+14. **Document Store**: MongoDB is often referred to as a document store because it stores data in BSON documents, making it suitable for semi-structured and unstructured data.
+
+15. **GridFS**: A specification for storing and retrieving large binary files in MongoDB, typically used for multimedia files like images, videos, and audio.
+
+16. **Geospatial Index**: An index that allows MongoDB to perform geospatial queries, such as finding documents within a specific geographical area.
+
+17. **Authentication and Authorization**: MongoDB provides authentication mechanisms to control access to databases and collections. Roles and privileges are used for authorization.
+
+18. **Aggregation Pipeline**: A framework for data transformation and processing in MongoDB that allows documents to pass through a series of stages, each performing a specific operation.
+
+19. **Change Streams**: A feature that allows clients to listen for changes in a MongoDB collection in real-time. It can be used for building reactive applications.
+
+20. **Map-Reduce**: A data processing technique in MongoDB for performing complex data transformations and aggregations. It involves a map function, a reduce function, and an output collection.
+
+These MongoDB terminologies should help you better understand and work with MongoDB databases and collections.
 </details>
 
 ### MongoDB benefits
