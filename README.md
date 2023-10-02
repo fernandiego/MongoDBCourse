@@ -1,7 +1,7 @@
 # MongoDB Udemy course
 - Excel in NoSQL & Pass Certification
 
-## ROADMAP so far:
+## ROADMAP so far
 - Installing mongoDB using docker image [Tutorial how to](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-community-with-docker/#std-label-docker-mongodb-community-install)
 - To start the mongosh using this docker image, use this command docker exec -it nomeDoContainer mongosh
 - local database created, with no auth, some issues here
@@ -9,7 +9,8 @@
 - Class number 9, the differences of MongoDB and SQL databases
 - Class number 12, how mongoDB works
 - Connecting with a database, with and without auth 
-- insertOne, insertMany, find and more
+- insertOne, insertMany, find and more (CRUD)
+- More queries, operators
 
 [//]: # (<details close><summary>Annotations</summary></details>)
 
@@ -140,5 +141,59 @@ MongoDB and traditional SQL databases differ in several key ways:
    - **SQL:** SQL databases require careful schema design and management, and schema changes can be complex and time-consuming.
 
 The choice between MongoDB and SQL databases depends on your specific project requirements, data model, and use cases. Each has its strengths and weaknesses, and the decision should align with your application's needs.
+</details>
+
+### MongoDB Operators
+ <details close>
+   <summary>click to see</summary>
+MongoDB provides various operators to perform operations on data. Here's a list of some commonly used MongoDB operators:
+
+**Comparison Operators:**
+1. `$eq`: Matches values that are equal to a specified value.
+2. `$ne`: Matches values that are not equal to a specified value.
+3. `$gt`: Matches values that are greater than a specified value.
+4. `$gte`: Matches values that are greater than or equal to a specified value.
+5. `$lt`: Matches values that are less than a specified value.
+6. `$lte`: Matches values that are less than or equal to a specified value.
+7. `$in`: Matches any of the values specified in an array.
+8. `$nin`: Matches none of the values specified in an array.
+
+**Logical Operators:**
+9. `$and`: Joins query clauses with a logical AND and returns documents that match both conditions.
+10. `$or`: Joins query clauses with a logical OR and returns documents that match at least one condition.
+11. `$not`: Inverts the effect of a query expression and returns documents that do not match the specified condition.
+12. `$nor`: Joins query clauses with a logical NOR and returns documents that do not match any condition.
+
+**Element Operators:**
+13. `$exists`: Matches documents that have the specified field.
+14. `$type`: Matches documents that have a field of a specified type.
+
+**Evaluation Operators:**
+15. `$expr`: Allows the use of aggregation expressions within the query language.
+16. `$jsonSchema`: Validates documents against a given JSON schema.
+17. `$mod`: Performs a modulo operation on the value of a field and selects documents with a specified result.
+18. `$regex`: Matches documents that satisfy a regular expression.
+
+**Array Operators:**
+19. `$all`: Matches documents that contain all elements specified in an array.
+20. `$elemMatch`: Matches documents that contain an array field with at least one element that matches all specified criteria.
+21. `$size`: Matches documents where the size of an array field meets the specified value.
+
+**Projection Operators:**
+22. `$`: Projects the first element in an array that matches the query condition.
+23. `$elemMatch`: Projects the first element in an array that matches the specified condition.
+
+**Array Update Operators (for use with `$push`, `$pull`, `$addToSet`, etc.):**
+24. `$each`: Modifies arrays with multiple values in a single operation.
+25. `$slice`: Limits the number of elements in an array.
+26. `$position`: Specifies the position for an operation.
+27. `$sort`: Sorts elements in an array.
+
+**Geospatial Operators:**
+28. `$geoWithin`: Selects documents with a specified geometric shape within a bounding geoJSON geometry.
+29. `$geoIntersects`: Selects documents with a geometric shape that intersects with a specified geoJSON geometry.
+30. `$near`: Returns geospatially nearest documents.
+
+These operators can be used in MongoDB queries and updates to perform a wide range of operations on your data. Keep in mind that MongoDB also provides aggregation operators for more advanced data manipulation in aggregation pipelines.
 </details>
 
