@@ -8,7 +8,8 @@
 - Class number 8, MongoDB origins and benefits
 - Class number 9, the differences of MongoDB and SQL databases
 - Class number 12, how mongoDB works
-- Connecting with a database, with and without auth
+- Connecting with a database, with and without auth 
+- insertOne, insertMany, find and more
 
 [//]: # (<details close><summary>Annotations</summary></details>)
 
