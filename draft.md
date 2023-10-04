@@ -101,3 +101,16 @@ db.customer.find({name: 'Deborah Allen'}, {name: 1}) only the field name with id
 db.customer.find({name: 'Deborah Allen'}, {name: 1, _id: 0}) only field name
 
 db.customer.find({name: 'Deborah Allen'}, {name: 0}) all the other fields
+
+db.customer.find(
+  { city: 'Las Vegas, United States' },
+  { name: 1, hobbies: 1, city: 1, _id: 0 }
+)
+display only _id, name, hobbies and city(Las vegas specifically)
+
+var cursor = db.customer.find()
+
+jobapp> var array = cursor.toArray()
+
+jobapp> array[3]
+

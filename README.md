@@ -15,6 +15,7 @@
 - Querrying arrays in documents
 - Operators, Querries that aim arrays position
 - MongoDB projections
+- Cursors in MongoDB ( Using variables to save querries and manipulating the data)
 
 [//]: # (<details close><summary>Annotations</summary></details>)
 
