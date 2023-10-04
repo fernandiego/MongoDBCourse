@@ -12,6 +12,7 @@
 - insertOne, insertMany, find and more (CRUD)
 - More queries, operators
 - Embedded documents
+- Querrying arrays in documents
 
 [//]: # (<details close><summary>Annotations</summary></details>)
 
