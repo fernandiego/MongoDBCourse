@@ -91,3 +91,7 @@ db.customer.updateMany(
         university: 'California university', 
                 start: '02-2015', 
                 degree: 'BBA'}}})
+
+db.customer.find({ hobbies: { $in: ['Dancing', 'Swimming'] } })
+
+db.customer.find({'location.0': {$gt: 74}})
