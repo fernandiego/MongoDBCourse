@@ -95,3 +95,9 @@ db.customer.updateMany(
 db.customer.find({ hobbies: { $in: ['Dancing', 'Swimming'] } })
 
 db.customer.find({'location.0': {$gt: 74}})
+
+db.customer.find({name: 'Deborah Allen'}, {name: 1}) only the field name with id
+
+db.customer.find({name: 'Deborah Allen'}, {name: 1, _id: 0}) only field name
+
+db.customer.find({name: 'Deborah Allen'}, {name: 0}) all the other fields

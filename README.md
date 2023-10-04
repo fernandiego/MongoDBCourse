@@ -14,6 +14,7 @@
 - Embedded documents
 - Querrying arrays in documents
 - Operators, Querries that aim arrays position
+- MongoDB projections
 
 [//]: # (<details close><summary>Annotations</summary></details>)
 
