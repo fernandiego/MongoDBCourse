@@ -82,3 +82,12 @@ db.customer.updateOne({name: 'Diego'},{$set: {name: 'Fernando'}})
     hobbies: [ 'Dancing' ]
   }
 ]
+
+db.customer.find({$or: [{city: 'San Jose, United States'},{age: {$gte:'23'} }]})
+
+db.customer.updateMany(
+    {city: 'San Jose, United States'}, 
+    {$set: {education: {
+        university: 'California university', 
+                start: '02-2015', 
+                degree: 'BBA'}}})

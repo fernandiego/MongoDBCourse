@@ -11,6 +11,7 @@
 - Connecting with a database, with and without auth 
 - insertOne, insertMany, find and more (CRUD)
 - More queries, operators
+- Embedded documents
 
 [//]: # (<details close><summary>Annotations</summary></details>)
 
