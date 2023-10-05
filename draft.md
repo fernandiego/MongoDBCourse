@@ -114,3 +114,64 @@ jobapp> var array = cursor.toArray()
 
 jobapp> array[3]
 
+db.customer.insertMany([
+  {
+    _id: ObjectId("63b25784bd3738edb929bca7"),
+    name: 'John Bruce',
+    age: 44,
+    city: 'Las Vegas, United States',
+    location: [ 48.8584, 2.2945 ],
+    hobbies: [ 'Swimming', 'Reading' ]
+  },
+  {
+    _id: 1,
+    name: 'John Bruce',
+    age: 44,
+    city: 'Las Vegas, United States',
+    location: [ 48.8584, 2.2945 ],
+    hobbies: [ 'Swimming', 'Reading' ]
+  },
+  {
+    _id: ObjectId("63b25d8abd3738edb929bca8"),
+    name: 'Michael Dsouza',
+    age: 23,
+    city: 'San Jose, United States',
+    location: [ 40.6892, 74.0445 ],
+    hobbies: [ 'Dancing' ]
+  },
+  {
+    _id: ObjectId("63b25edcbd3738edb929bca9"),
+    name: 'Michael Dsouza',
+    age: 23,
+    city: 'San Jose, United States',
+    location: [ 40.6892, 74.0445 ],
+    hobbies: [ 'Dancing' ]
+  },
+  {
+    _id: 123,
+    name: 'Michael Dsouza',
+    age: 23,
+    city: 'San Jose, United States',
+    location: [ 40.6892, 74.0445 ],
+    hobbies: [ 'Dancing' ]
+  },
+  {
+    _id: ObjectId("63b2623bbd3738edb929bcaa"),
+    name: 'Nina Jekins',
+    age: 29,
+    city: 'San Francisco, United States',
+    location: [ 40.6892, 74.0445 ],
+    hobbies: [ 'Coding' ]
+  },
+  {
+    _id: ObjectId("63b2623bbd3738edb929bcab"),
+    name: 'Michael bura',
+    age: 32,
+    city: 'Utah, United States',
+    location: [ 48.8584, 2.2945 ],
+    hobbies: [ 'Writing', 'Dancing' ]
+  }
+])
+
+db.customer.updateMany({_id: 123}, {$inc: {age: -1, score: 1}})
+

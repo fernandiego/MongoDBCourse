@@ -12,10 +12,11 @@
 - insertOne, insertMany, find and more (CRUD)
 - More queries, operators
 - Embedded documents
-- Querrying arrays in documents
-- Operators, Querries that aim arrays position
+- Querying arrays in documents
+- Operators, Queries that aim arrays position
 - MongoDB projections
-- Cursors in MongoDB ( Using variables to save querries and manipulating the data)
+- Cursors in MongoDB ( Using variables to save queries and manipulating the data)
+- Update operators (updateOne, updateMany)
 
 [//]: # (<details close><summary>Annotations</summary></details>)
 
