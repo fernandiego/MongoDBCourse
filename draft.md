@@ -175,3 +175,7 @@ db.customer.insertMany([
 
 db.customer.updateMany({_id: 123}, {$inc: {age: -1, score: 1}})
 
+// Increment 'age' by 2 for all documents
+db.customer.updateMany({}, { $inc: { age: 2 } })
+
+db.customer.updateMany({name: 'Alice Johnson'}, {$max: {age: 20}})
