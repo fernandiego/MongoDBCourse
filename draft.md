@@ -183,3 +183,5 @@ db.customer.updateMany({name: 'Alice Johnson'}, {$max: {age: 20}})
 db.customer.updateMany({name: 'Michael Dsouza'}, {$rename: {pionts: 'points'}})
 
 db.customer.updateMany({name: 'Michael Dsouza'}, {$unset: {points: ''}})
+
+db.customer.updateMany({name: 'Fernando'}, {$set: {points: 10}}, {upsert: true})
