@@ -179,3 +179,7 @@ db.customer.updateMany({_id: 123}, {$inc: {age: -1, score: 1}})
 db.customer.updateMany({}, { $inc: { age: 2 } })
 
 db.customer.updateMany({name: 'Alice Johnson'}, {$max: {age: 20}})
+
+db.customer.updateMany({name: 'Michael Dsouza'}, {$rename: {pionts: 'points'}})
+
+db.customer.updateMany({name: 'Michael Dsouza'}, {$unset: {points: ''}})

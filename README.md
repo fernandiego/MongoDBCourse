@@ -18,6 +18,7 @@
 - Cursors in MongoDB ( Using variables to save queries and manipulating the data)
 - Update operators (updateOne, updateMany)
 - Update operators (min, max, mul) updates values minor than, greater than and multiplies values
+- Rename and unset operators
 
 [//]: # (<details close><summary>Annotations</summary></details>)
 
