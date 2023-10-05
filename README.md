@@ -20,6 +20,7 @@
 - Update operators (min, max, mul) updates values minor than, greater than and multiplies values
 - Rename and unset operators
 - Upsert, update if the document exist, insert if not
+- Delete operations, deleteOne, deleteMany
 
 [//]: # (<details close><summary>Annotations</summary></details>)
 

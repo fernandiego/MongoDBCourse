@@ -185,3 +185,87 @@ db.customer.updateMany({name: 'Michael Dsouza'}, {$rename: {pionts: 'points'}})
 db.customer.updateMany({name: 'Michael Dsouza'}, {$unset: {points: ''}})
 
 db.customer.updateMany({name: 'Fernando'}, {$set: {points: 10}}, {upsert: true})
+
+[
+  {
+    _id: ObjectId("63b25784bd3738edb929bca7"),
+    name: 'John Bruce',
+    age: 44,
+    city: 'Las Vegas, United States',
+    location: [ 48.8584, 2.2945 ],
+    hobbies: [ 'Swimming', 'Reading' ],
+    points: 300
+  },
+  {
+    _id: 1,
+    name: 'John Bruce',
+    age: 44,
+    city: 'Las Vegas, United States',
+    location: [ 48.8584, 2.2945 ],
+    hobbies: [ 'Swimming', 'Reading' ],
+    points: 200
+  },
+  {
+    _id: ObjectId("63b25d8abd3738edb929bca8"),
+    name: 'Michael Dsouza',
+    age: 23,
+    city: 'San Jose, United States',
+    location: [ 40.6892, 74.0445 ],
+    hobbies: [ 'Dancing' ],
+    points: 150
+  },
+  {
+    _id: ObjectId("63b25edcbd3738edb929bca9"),
+    name: 'Michael Dsouza',
+    age: 23,
+    city: 'San Jose, United States',
+    location: [ 40.6892, 74.0445 ],
+    hobbies: [ 'Dancing' ],
+    points: 850
+  },
+  {
+    _id: 123,
+    name: 'Michael Dsouza',
+    age: 23,
+    city: 'San Jose, United States',
+    location: [ 40.6892, 74.0445 ],
+    hobbies: [ 'Dancing' ],
+    points: 93
+  },
+  {
+    _id: ObjectId("63b2623bbd3738edb929bcaa"),
+    name: 'Nina Jekins',
+    age: 29,
+    city: 'San Francisco, United States',
+    location: [ 40.6892, 74.0445 ],
+    hobbies: [ 'Coding' ],
+    points: 55
+  },
+  {
+    _id: ObjectId("63b2623bbd3738edb929bcab"),
+    name: 'Michael bura',
+    age: 32,
+    city: 'Utah, United States',
+    location: [ 48.8584, 2.2945 ],
+    hobbies: [ 'Writing', 'Dancing' ],
+    points: 110
+  },
+  {
+    _id: ObjectId("63b26ad9bd3738edb929bcac"),
+    name: 'Michael Pele',
+    age: 23,
+    city: 'San Jose, United States',
+    location: [ 40.6892, 74.0445 ],
+    hobbies: [ 'Dancing' ],
+    points: 180
+  }
+]
+
+db.customer.deleteOne({_id: ObjectId('63b25784bd3738edb929bca7')})
+
+db.customer.deleteOne({points: {$gte: 500}})
+
+db.customer.deleteMany({points: {$lte: 500}})
+
+
+
