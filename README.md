@@ -21,6 +21,9 @@
 - Rename and unset operators
 - Upsert, update if the document exist, insert if not
 - Delete operations, deleteOne, deleteMany
+- Data modeling
+- Data types (Double, String, Integer, Boolean, Object ID, Null, Arrays, Date, Timestamp)
+- Modeling database
 
 [//]: # (<details close><summary>Annotations</summary></details>)
 
