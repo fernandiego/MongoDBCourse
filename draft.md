@@ -267,5 +267,7 @@ db.customer.deleteOne({points: {$gte: 500}})
 
 db.customer.deleteMany({points: {$lte: 500}})
 
+db.salary.findOne({employee_id: john_id})
 
+var john_id = db.employee.findOne({name: 'John Morgan'})._id
 

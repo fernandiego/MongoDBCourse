@@ -24,6 +24,8 @@
 - Data modeling
 - Data types (Double, String, Integer, Boolean, Object ID, Null, Arrays, Date, Timestamp)
 - Modeling database
+- One to one relationship and patterns
+- One to many references
 
 [//]: # (<details close><summary>Annotations</summary></details>)
 
